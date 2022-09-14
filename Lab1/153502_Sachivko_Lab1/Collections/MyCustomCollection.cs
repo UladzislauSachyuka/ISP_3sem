@@ -12,9 +12,8 @@ namespace _153502_Sachivko_Lab1.Collections
     {
         private Node<T> Curr { get; set; }
         private Node<T> Head { get; set; }
-        //private Node<T> Tail { get; set; }
-        public T this[int index] 
-        { 
+        public T this[int index]
+        {
             get
             {
                 if (index >= Count)
@@ -65,14 +64,12 @@ namespace _153502_Sachivko_Lab1.Collections
 
         public T Current()
         {
-            if (Count == 0)
-                throw new IndexOutOfRangeException();
             return Curr.Data;
         }
 
         public void Next()
         {
-            if (Curr.Next != null) 
+            if (Curr.Next != null)
                 Curr = Curr.Next;
         }
 

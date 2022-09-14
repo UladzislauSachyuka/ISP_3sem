@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using _153502_Sachivko_Lab1.Collections;
+using _153502_Sachivko_Lab1.Interfaces;
 
 namespace _153502_Sachivko_Lab1
 {
     public class Airport
     {
-        private MyCustomCollection<Passenger> passengers;
-        private MyCustomCollection<Ticket> tickets;
+        private ICustomCollection<Passenger> passengers;
+        private ICustomCollection<Ticket> tickets;
 
         public Airport() 
         {

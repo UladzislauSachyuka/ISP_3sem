@@ -3,38 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using _153502_Sachivko_Lab1.Collections;
+using Lab2.Collections;
 
-namespace _153502_Sachivko_Lab1
+namespace Lab2
 {
     public class Passenger
     {
         private string name;
-        public Passenger(string name_)
-        {
-            name = name_;
-            Tickets = new MyCustomCollection<Ticket>();
-        }
-
-        public void Buy(Ticket.Tariff Type, int Price)
-        {
-            Tickets.Add(new Ticket(Price, Type));
-            return;
-        }
-        public void Buy(Ticket ticket)
-        {
-            Tickets.Add(ticket);
-            return;
-        }
-        public int GetTotalPrice()
-        {
-            int TotalPrice = 0;
-            for (int i = 0; i < tickets.Count; ++i)
-            {
-                TotalPrice += tickets[i].Price;
-            }
-            return TotalPrice;
-        }
         public string Name
         {
             get { return name; }
@@ -50,10 +25,35 @@ namespace _153502_Sachivko_Lab1
         }
 
         private MyCustomCollection<Ticket> tickets;
-        private MyCustomCollection<Ticket> Tickets
+        public MyCustomCollection<Ticket> Tickets
         {
             get { return tickets; }
             set { tickets = value; }
+        }
+        public Passenger(string name_)
+        {
+            Name = name_;
+            Tickets = new MyCustomCollection<Ticket>();
+        }
+
+        public void Buy(string Tariff, int Price)
+        {
+            Tickets.Add(new Ticket(Price, Tariff));
+            return;
+        }
+        public void Buy(Ticket ticket)
+        {
+            Tickets.Add(ticket);
+            return;
+        }
+        public int GetTotalPrice()
+        {
+            int TotalPrice = 0;
+            for (int i = 0; i < tickets.Count; ++i)
+            {
+                TotalPrice += tickets[i].Price;
+            }
+            return TotalPrice;
         }
     }
 }

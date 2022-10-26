@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab5", "Lab5\Lab5.csproj", "{3137CDC6-3342-441C-9421-AAD9A92C96DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serializer", "Serializer\Serializer.csproj", "{39802DB0-766A-41CD-BB9A-2F93D3B90A36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab5.Domain", "Lab5.Domain\Lab5.Domain.csproj", "{B58BFAA5-D132-4F81-8F6A-4DEFB41D00BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3137CDC6-3342-441C-9421-AAD9A92C96DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3137CDC6-3342-441C-9421-AAD9A92C96DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3137CDC6-3342-441C-9421-AAD9A92C96DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3137CDC6-3342-441C-9421-AAD9A92C96DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39802DB0-766A-41CD-BB9A-2F93D3B90A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39802DB0-766A-41CD-BB9A-2F93D3B90A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39802DB0-766A-41CD-BB9A-2F93D3B90A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39802DB0-766A-41CD-BB9A-2F93D3B90A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B58BFAA5-D132-4F81-8F6A-4DEFB41D00BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B58BFAA5-D132-4F81-8F6A-4DEFB41D00BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B58BFAA5-D132-4F81-8F6A-4DEFB41D00BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B58BFAA5-D132-4F81-8F6A-4DEFB41D00BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EC1C0CC-9EE3-44BC-8064-51CCFA56EF42}
+	EndGlobalSection
+EndGlobal
